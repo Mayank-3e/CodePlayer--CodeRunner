@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>jQuery Basics</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="menubar">
+            <div id="logo">
+                CodePlayer
+            </div>
+
+            <div id="buttonDiv">
+                <button id="runButton">Run</button>
+            </div>
+
+            <ul id="toggles">
+                <li class="toggle selected">HTML</li>
+                <li class="toggle">CSS</li>
+                <li class="toggle">JS</li>
+                <li class="toggle selected" style="border: none;">Result</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="codeContainer" id="HTMLContainer">
+        <div class="codeLabel">HTML</div>
+        <textarea id="HTMLCode">Example code</textarea>
+    </div>
+
+    <div class="codeContainer" id="CSSContainer">
+        <div class="codeLabel">CSS</div>
+        <textarea id="CSSCode">Example code</textarea>
+    </div>
+
+    <div class="codeContainer" id="JSContainer">
+        <div class="codeLabel">JS</div>
+        <textarea id="JSCode">Example code</textarea>
+    </div>
+
+    <div class="codeContainer" id="ResultContainer">
+        <div class="codeLabel">Result</div>
+
+        <iframe id="resultFrame"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
